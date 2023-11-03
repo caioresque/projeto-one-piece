@@ -1,0 +1,207 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000000 40%, rgba(0, 0, 0, 0) 65%);
+    background-repeat: no-repeat;
+}
+
+main .personagem {
+    display: none;
+    height: 100%;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.botoes .botaoluffy {
+    border: none;
+    background-color: transparent; 
+    cursor: pointer;
+    width: 100px; 
+    height: 100px;
+    position: relative;
+}
+
+.botoes .botaoluffy {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #d9d9d9;
+    border-radius: 50%;
+}
+
+.botoes .botaoluffy img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s; 
+    &:hover {
+    border-color: #DC143C; 
+    }
+}
+
+.botoes .botaozoro {
+    border:none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.botoes .botaozoro {
+    box-shadow: 0 0 10px #d9d9d9;
+    border-radius: 50%;
+}
+
+.botoes .botaozoro img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s; 
+    &:hover {
+    border-color: #008000; 
+    }
+}
+
+.botoes .botaochopper {
+    border:none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.botoes .botaochopper {
+    box-shadow: 0 0 10px #d9d9d9;
+    border-radius: 50%;
+}
+
+.botoes .botaochopper img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s; 
+    &:hover {
+    border-color: #fc0fc0; 
+    }
+}
+
+.botoes .botaonami {
+    border:none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.botoes .botaonami {
+    box-shadow: 0 0 10px #d9d9d9;
+    border-radius: 50%;
+}
+
+.botoes .botaonami img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s; 
+    &:hover {
+    border-color: #ffff00; 
+    }
+}
+
+.botoes .botaosanji {
+    border:none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.botoes .botaosanji {
+    box-shadow: 0 0 10px #d9d9d9;
+    border-radius: 50%;
+}
+
+.botoes .botaosanji img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s; 
+    &:hover {
+    border-color: #0000FF; 
+    }
+}
+
